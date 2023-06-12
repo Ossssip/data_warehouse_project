@@ -4,7 +4,7 @@ import time
 from google.cloud import bigquery
 
 
-
+#obsolete - use upload_csv_to_bigquery instead!
 
 #getting data from API
 
@@ -84,8 +84,9 @@ def fetch_from_ergast(endpoint,keyword,bq_table_name):
         push_to_bigquery(bq_table_name,'tmp.json')
         
     
-    
+### Unkomment to run or fetch some more data    
 #fetch_from_ergast('seasons','SeasonTable','tmp2')     
 #fetch_from_ergast('results','RaceTable','tmp3')     
-fetch_from_ergast('driverStandings','StandingsTable','driverStandings')  
+# this one is really slow
+#fetch_from_ergast('driverStandings','StandingsTable','driverStandings')  
  

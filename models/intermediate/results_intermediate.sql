@@ -6,7 +6,7 @@ with int_results as (
 
     SELECT
 	    *
-	from {{ ref('base_results')}}
+	from {{ ref('results_base')}}
 )
 
 select *

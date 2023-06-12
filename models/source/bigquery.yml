@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bigquery
+    database: cohesive-gadget-386815
+    schema: races_raw
+    tables:
+      - name: results
