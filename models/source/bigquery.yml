@@ -6,3 +6,15 @@ sources:
     schema: races_raw
     tables:
       - name: results
+      - name: driver_standings
+      - name: constructor_standings
+      - name: constructor_results
+      - name: seasons
+      - name: drivers 
+      - name: constructors 
+      - name: circuits 
+      - name: races 
+      - name: sprintResults
+      - name: status 
+      - name: lapTimes
+      - name: pitStops
