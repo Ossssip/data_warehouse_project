@@ -1,0 +1,17 @@
+#this is a sample profiles.yml file. It should sit in ~/.dbt/. For more details, read https://docs.getdbt.com/docs/core/connect-data-platform/profiles.yml
+
+
+test_proj: #project name
+  outputs:
+    dev:
+      dataset: races
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: service-account
+      keyfile: 'path to your service account keyfile'
+      priority: interactive
+      project: 'your BigQuery project id'
+      threads: 1
+      type: bigquery
+  target: dev

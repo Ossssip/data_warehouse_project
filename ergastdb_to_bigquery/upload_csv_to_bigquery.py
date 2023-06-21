@@ -11,7 +11,7 @@ import os.path
 zip_file_url = 'https://ergast.com/downloads/f1db_csv.zip'
 project_id = 'cohesive-gadget-386815'
 dataset_id = 'races_raw'
-client = bigquery.Client.from_service_account_json('../secrets/bq.json')
+client = bigquery.Client.from_service_account_json('../secrets/bq.json') #update with the path to your key
 
 #need this as bigquery schema autordetect is not reliable, 
 #easier to declare all vars string 
